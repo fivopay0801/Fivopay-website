@@ -48,7 +48,7 @@ const products = [
       "Automated Zakat calculations",
       "Profit & loss sharing automation",
       "Sharia compliance monitoring",
-     
+      "investment products",
       "Halal portfolio management",
       "Fatwa management system",
     ],
