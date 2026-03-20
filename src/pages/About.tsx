@@ -73,6 +73,107 @@ const About = () => {
         </div>
       </section>
 
+      {/* Technology & Compliance Section - Premium Redesign */}
+      <section className="py-24 relative overflow-hidden bg-background">
+        {/* Background Mesh Gradients */}
+        <div className="absolute top-0 left-0 w-full h-full -z-10 overflow-hidden pointer-events-none">
+          <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-primary/10 rounded-full blur-[120px] animate-pulse" />
+          <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-brand-cyan/10 rounded-full blur-[120px]" />
+        </div>
+
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="text-center max-w-3xl mx-auto mb-16">
+            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 mb-6 text-primary animate-in fade-in slide-in-from-bottom-3 duration-1000">
+              <Shield className="h-4 w-4" />
+              <span className="text-xs font-bold uppercase tracking-[0.2em]">Enterprise Security</span>
+            </div>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight">
+              Technology & <span className="gradient-text">Compliance</span>
+            </h2>
+          </div>
+
+          <div className="grid lg:grid-cols-3 gap-8 items-start">
+            {/* Left Card: Core Mission */}
+            <div className="lg:col-span-2 group">
+              <div className="relative p-1 rounded-3xl bg-gradient-to-br from-primary/20 via-border to-brand-cyan/20 transition-all duration-500 group-hover:shadow-2xl group-hover:shadow-primary/5">
+                <div className="relative bg-card/60 backdrop-blur-xl p-8 md:p-12 rounded-[calc(1.5rem-1px)] h-full border border-white/5">
+                  <div className="absolute top-0 right-0 p-8 opacity-[0.03] pointer-events-none">
+                    <Shield className="h-48 w-48 text-primary" />
+                  </div>
+
+                  <div className="relative z-10">
+                    <p className="text-2xl md:text-3xl font-semibold leading-tight mb-8 text-foreground tracking-tight">
+                      "We specialize in <span className="text-primary font-bold">secure, payment-driven business solutions</span>—designing websites and mobile applications with <span className="gradient-text">banking-grade architecture</span>."
+                    </p>
+
+                    <div className="grid md:grid-cols-2 gap-8 text-muted-foreground leading-relaxed">
+                      <div>
+                        <h4 className="text-foreground font-bold mb-3 flex items-center gap-2">
+                          <div className="w-1 h-4 bg-primary rounded-full" />
+                          Software Infrastructure
+                        </h4>
+                        <p>
+                          FivoPay is a mission-critical technology provider. We build and maintain the robust digital
+                          pipelines that power modern financial institutions with 99.9% availability.
+                        </p>
+                      </div>
+                      <div>
+                        <h4 className="text-foreground font-bold mb-3 flex items-center gap-2">
+                          <div className="w-1 h-4 bg-brand-cyan rounded-full" />
+                          Seamless Integration
+                        </h4>
+                        <p>
+                          Our solutions are designed to integrate perfectly with global banking standards while
+                          providing local-first excellence in regulatory compliance.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Right Card: Compliance Focus */}
+            <div className="space-y-6">
+              <div className="p-8 rounded-3xl bg-secondary/30 border border-border/50 backdrop-blur-md relative overflow-hidden group hover:border-primary/30 transition-colors">
+                <div className="absolute top-0 left-0 w-1 h-full bg-primary" />
+                <h3 className="font-bold text-xl mb-4 flex items-center gap-2">
+                  <Award className="h-5 w-5 text-primary" />
+                  Operational Model
+                </h3>
+                <div className="space-y-4">
+                  <div className="bg-background/40 p-5 rounded-2xl border border-border/40">
+                    <p className="text-sm font-medium text-foreground mb-1">Infrastructure Only</p>
+                    <p className="text-xs text-muted-foreground leading-relaxed">
+                      Our platform provides the specialized technical frameworks and cloud-native software.
+                    </p>
+                  </div>
+                  <div className="bg-primary/5 p-5 rounded-2xl border border-primary/20">
+                    <p className="text-sm font-bold text-primary mb-1">Fund Management</p>
+                    <p className="text-xs text-foreground font-semibold leading-relaxed mb-2">
+                      We do not hold or manage customer funds directly.
+                    </p>
+                    <p className="text-[10px] text-muted-foreground uppercase tracking-widest leading-tight">
+                      * Licensed Aggregators Only
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="p-6 rounded-3xl bg-gradient-to-br from-brand-blue/10 to-transparent border border-white/5 flex items-center gap-4">
+                <div className="h-12 w-12 rounded-2xl bg-primary/10 flex items-center justify-center border border-primary/20 shrink-0">
+                  <Globe className="h-6 w-6 text-primary" />
+                </div>
+                <div>
+                  <p className="text-xs font-bold uppercase tracking-widest text-muted-foreground mb-1">Global Standard</p>
+                  <p className="text-sm font-medium">PCI-DSS Ready Infrastructure</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Mission & Vision */}
       <section className="py-20 bg-background">
         <div className="container mx-auto px-4 md:px-6">
@@ -169,34 +270,7 @@ const About = () => {
         </div>
       </section>
 
-      {/* Compliance & Partnership */}
-      <section className="py-20 bg-background border-y border-border">
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="max-w-4xl mx-auto p-8 rounded-2xl bg-secondary/50 border border-border">
-            <div className="flex items-center gap-3 mb-6">
-              <Shield className="h-8 w-8 text-primary" />
-              <h2 className="text-3xl font-bold">Technology & Compliance</h2>
-            </div>
-            <div className="space-y-4 text-muted-foreground leading-relaxed">
-              <p>
-                FivoPay Solutions Pvt Ltd is a financial technology software provider. We specialize in building and maintaining
-                enterprise-grade banking infrastructure for financial institutions.
-              </p>
-              <div className="p-4 bg-primary/5 rounded-lg border border-primary/20 text-foreground font-medium">
-                <strong>Important Note:</strong> Our platform provides the technical infrastructure and software services for
-                banking operations. <strong>We do not hold, manage, or process customer funds directly</strong>.
-                All payment processing is handled by our licensed payment aggregation partners in compliance with RBI guidelines.
-              </div>
-              <p>
-                This clear separation of technology and fund management ensures maximum security, regulatory compliance,
-                and transparency for our clients and their end-users.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Team */}
+      {/* Mission & Vision */}
       <section className="py-20 bg-secondary">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center mb-12">
