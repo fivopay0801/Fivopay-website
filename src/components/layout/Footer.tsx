@@ -88,15 +88,15 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-center gap-3 text-background/70 text-sm">
                 <Mail className="h-4 w-4 shrink-0" />
-                <span>info@fivopay.com</span>
+                <span>fivopay0801@gmail.com</span>
               </li>
               <li className="flex items-center gap-3 text-background/70 text-sm">
                 <Phone className="h-4 w-4 shrink-0" />
-                <span>+91 8265025883</span>
+                <span>+91 8292355155</span>
               </li>
               <li className="flex items-start gap-3 text-background/70 text-sm">
                 <MapPin className="h-4 w-4 shrink-0 mt-1" />
-                <span>Pune, Maharashtra, India</span>
+                <span>10 Biz Park, Viman Nagar, Pune, Maharashtra, India</span>
               </li>
             </ul>
           </div>
@@ -107,15 +107,18 @@ const Footer = () => {
           <p className="text-background/50 text-sm">
             © {currentYear} FivoPay. All rights reserved.
           </p>
-          <div className="flex gap-6">
-            <Link to="/security" className="text-background/50 hover:text-background text-sm transition-colors">
+          <div className="flex flex-wrap gap-4 md:gap-6">
+            <Link to="/privacy-policy" className="text-background/50 hover:text-background text-sm transition-colors">
               Privacy Policy
             </Link>
-            <Link to="/security" className="text-background/50 hover:text-background text-sm transition-colors">
-              Terms of Service
+            <Link to="/terms-conditions" className="text-background/50 hover:text-background text-sm transition-colors">
+              Terms & Conditions
             </Link>
-            <Link to="/security" className="text-background/50 hover:text-background text-sm transition-colors">
-              Compliance
+            <Link to="/refund-policy" className="text-background/50 hover:text-background text-sm transition-colors">
+              Refund Policy
+            </Link>
+            <Link to="/service-fulfillment" className="text-background/50 hover:text-background text-sm transition-colors">
+              Fulfillment Policy
             </Link>
           </div>
         </div>

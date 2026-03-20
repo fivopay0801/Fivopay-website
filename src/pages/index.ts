@@ -1,0 +1,10 @@
+export { default as Index } from "./Index";
+export { default as Products } from "./Products";
+export { default as About } from "./About";
+export { default as Security } from "./Security";
+export { default as Contact } from "./Contact";
+export { default as PrivacyPolicy } from "./PrivacyPolicy";
+export { default as TermsConditions } from "./TermsConditions";
+export { default as RefundPolicy } from "./RefundPolicy";
+export { default as ServiceFulfillment } from "./ServiceFulfillment";
+export { default as NotFound } from "./NotFound";

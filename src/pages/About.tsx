@@ -1,7 +1,7 @@
 import Layout from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { ArrowRight, Target, Eye, Heart, Users, Award, Globe } from "lucide-react";
+import { ArrowRight, Target, Eye, Heart, Users, Award, Globe, Shield } from "lucide-react";
 import { useEffect, useState } from "react";
 
 const values = [
@@ -57,18 +57,16 @@ const About = () => {
         <div className="container mx-auto px-4 md:px-6 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <h1
-              className={`text-4xl md:text-5xl lg:text-6xl font-bold mb-6 transition-all duration-700 ${
-                isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-              }`}
+              className={`text-4xl md:text-5xl lg:text-6xl font-bold mb-6 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+                }`}
             >
               About <span className="gradient-text">FivoPay</span>
             </h1>
             <p
-              className={`text-lg md:text-xl text-muted-foreground transition-all duration-700 delay-100 ${
-                isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-              }`}
+              className={`text-lg md:text-xl text-muted-foreground transition-all duration-700 delay-100 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+                }`}
             >
-              Making Banking Easier. We're on a mission to transform financial services 
+              Making Banking Easier. We're on a mission to transform financial services
               with innovative technology solutions.
             </p>
           </div>
@@ -85,8 +83,8 @@ const About = () => {
                 <h2 className="text-2xl font-bold">Our Mission</h2>
               </div>
               <p className="text-white/90 leading-relaxed">
-                To empower financial institutions with cutting-edge technology that simplifies 
-                complex banking operations, enhances customer experience, and drives sustainable 
+                To empower financial institutions with cutting-edge technology that simplifies
+                complex banking operations, enhances customer experience, and drives sustainable
                 growth across all types of financial services.
               </p>
             </div>
@@ -97,8 +95,8 @@ const About = () => {
                 <h2 className="text-2xl font-bold">Our Vision</h2>
               </div>
               <p className="text-white/90 leading-relaxed">
-                To become the leading financial technology partner for institutions worldwide, 
-                setting new standards in banking innovation while maintaining the highest levels 
+                To become the leading financial technology partner for institutions worldwide,
+                setting new standards in banking innovation while maintaining the highest levels
                 of security, compliance, and customer satisfaction.
               </p>
             </div>
@@ -157,7 +155,7 @@ const About = () => {
                   <div key={index} className="relative pl-20">
                     {/* Timeline dot */}
                     <div className="absolute left-6 w-4 h-4 rounded-full gradient-primary border-4 border-background" />
-                    
+
                     <div className="p-6 rounded-xl bg-card shadow-card border border-border">
                       <span className="text-sm font-semibold text-primary">{milestone.year}</span>
                       <h3 className="text-lg font-bold mt-1 mb-2">{milestone.title}</h3>
@@ -166,6 +164,33 @@ const About = () => {
                   </div>
                 ))}
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Compliance & Partnership */}
+      <section className="py-20 bg-background border-y border-border">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="max-w-4xl mx-auto p-8 rounded-2xl bg-secondary/50 border border-border">
+            <div className="flex items-center gap-3 mb-6">
+              <Shield className="h-8 w-8 text-primary" />
+              <h2 className="text-3xl font-bold">Technology & Compliance</h2>
+            </div>
+            <div className="space-y-4 text-muted-foreground leading-relaxed">
+              <p>
+                FivoPay Solutions Pvt Ltd is a financial technology software provider. We specialize in building and maintaining
+                enterprise-grade banking infrastructure for financial institutions.
+              </p>
+              <div className="p-4 bg-primary/5 rounded-lg border border-primary/20 text-foreground font-medium">
+                <strong>Important Note:</strong> Our platform provides the technical infrastructure and software services for
+                banking operations. <strong>We do not hold, manage, or process customer funds directly</strong>.
+                All payment processing is handled by our licensed payment aggregation partners in compliance with RBI guidelines.
+              </div>
+              <p>
+                This clear separation of technology and fund management ensures maximum security, regulatory compliance,
+                and transparency for our clients and their end-users.
+              </p>
             </div>
           </div>
         </div>

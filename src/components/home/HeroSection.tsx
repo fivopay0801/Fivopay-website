@@ -15,9 +15,9 @@ const HeroSection = () => {
     <section className="relative min-h-screen flex items-center overflow-hidden">
       {/* Hero Background Image */}
       <div className="absolute inset-0">
-        <img 
-          src={heroImage} 
-          alt="Financial technology visualization" 
+        <img
+          src={heroImage}
+          alt="Financial technology visualization"
           className="w-full h-full object-cover"
         />
         {/* Overlay for text readability */}
@@ -31,24 +31,21 @@ const HeroSection = () => {
           <div className="max-w-2xl">
             {/* Trust Badge */}
             <div
-              className={`inline-flex items-center gap-2 mb-8 transition-all duration-700 ${
-                isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-              }`}
+              className={`inline-flex items-center gap-2 mb-8 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+                }`}
             >
-              {/* <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-cyan opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-brand-cyan"></span>
-              </span>
-              <span className="text-sm text-muted-foreground">
-                Trusted by <span className="font-semibold text-foreground">200+</span> financial institutions worldwide
-              </span> */}
+              <div className="flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 backdrop-blur-sm">
+                <Shield className="h-3.5 w-3.5 text-primary" />
+                <span className="text-xs font-bold uppercase tracking-wider text-foreground">
+                  Registered Fintech Solutions Provider
+                </span>
+              </div>
             </div>
 
             {/* Main Headline */}
             <h1
-              className={`text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-[1.1] mb-6 transition-all duration-700 delay-100 ${
-                isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-              }`}
+              className={`text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-[1.1] mb-6 transition-all duration-700 delay-100 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+                }`}
             >
               Complete{" "}
               <span className="gradient-text">Financial Solutions</span>
@@ -58,19 +55,17 @@ const HeroSection = () => {
 
             {/* Subheadline */}
             <p
-              className={`text-lg md:text-xl text-muted-foreground max-w-xl mb-10 leading-relaxed transition-all duration-700 delay-200 ${
-                isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-              }`}
+              className={`text-lg md:text-xl text-muted-foreground max-w-xl mb-10 leading-relaxed transition-all duration-700 delay-200 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+                }`}
             >
-              From Cooperative Societies to Core Banking and Ethical Finance—comprehensive 
+              From Cooperative Societies to Core Banking and Ethical Finance—comprehensive
               SaaS solutions for all financial institutions. Making Banking Easier.
             </p>
 
             {/* CTA Buttons */}
             <div
-              className={`flex flex-col sm:flex-row gap-4 mb-12 transition-all duration-700 delay-300 ${
-                isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-              }`}
+              className={`flex flex-col sm:flex-row gap-4 mb-12 transition-all duration-700 delay-300 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+                }`}
             >
               <Link to="/products">
                 <Button variant="hero" size="xl" className="group w-full sm:w-auto">
@@ -87,9 +82,8 @@ const HeroSection = () => {
 
             {/* Feature Pills */}
             <div
-              className={`flex flex-wrap gap-3 transition-all duration-700 delay-400 ${
-                isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-              }`}
+              className={`flex flex-wrap gap-3 transition-all duration-700 delay-400 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+                }`}
             >
               <div className="flex items-center gap-2 px-4 py-2.5 rounded-full bg-card/80 backdrop-blur-sm shadow-lg border border-border">
                 <Shield className="h-4 w-4 text-brand-blue" />
@@ -108,9 +102,8 @@ const HeroSection = () => {
 
           {/* Right Side - Stats Cards */}
           <div
-            className={`hidden lg:block transition-all duration-1000 delay-500 ${
-              isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-8"
-            }`}
+            className={`hidden lg:block transition-all duration-1000 delay-500 ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-8"
+              }`}
           >
             <div className="relative">
               {/* Main Stats Card */}

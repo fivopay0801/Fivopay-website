@@ -2,10 +2,10 @@ import Layout from "@/components/layout/Layout";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { 
-  Mail, 
-  Phone, 
-  MapPin, 
+import {
+  Mail,
+  Phone,
+  MapPin,
   Clock,
   Send,
   Building2,
@@ -19,20 +19,20 @@ const contactInfo = [
   {
     icon: Mail,
     title: "Email Us",
-    value: "info@fivopay.com",
+    value: "fivopay0801@gmail.com",
     description: "We'll respond within 24 hours",
   },
   {
     icon: Phone,
     title: "Call Us",
-    value: "+91 8265025883",
+    value: "+91 8292355155",
     description: "Mon-Fri from 9am to 6pm IST",
   },
   {
     icon: MapPin,
     title: "Visit Us",
-    value: "Pune, Maharashtra",
-    description: "India",
+    value: "10 Biz Park, Viman Nagar",
+    description: "Pune, Maharashtra, India",
   },
   {
     icon: Clock,
@@ -88,18 +88,16 @@ const Contact = () => {
         <div className="container mx-auto px-4 md:px-6 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <h1
-              className={`text-4xl md:text-5xl lg:text-6xl font-bold mb-6 transition-all duration-700 ${
-                isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-              }`}
+              className={`text-4xl md:text-5xl lg:text-6xl font-bold mb-6 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+                }`}
             >
               Get in <span className="gradient-text">Touch</span>
             </h1>
             <p
-              className={`text-lg md:text-xl text-muted-foreground transition-all duration-700 delay-100 ${
-                isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-              }`}
+              className={`text-lg md:text-xl text-muted-foreground transition-all duration-700 delay-100 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+                }`}
             >
-              Ready to transform your financial operations? Our team is here to help 
+              Ready to transform your financial operations? Our team is here to help
               you find the perfect solution for your institution.
             </p>
           </div>
@@ -205,7 +203,7 @@ const Contact = () => {
             {/* Contact Info */}
             <div>
               <div className="mb-8">
-                <h2 className="text-2xl font-bold mb-2">Contact Information</h2>
+                <h2 className="text-2xl font-bold mb-2">FivoPay Solutions Pvt Ltd</h2>
                 <p className="text-muted-foreground">
                   Reach out through any of these channels
                 </p>
@@ -252,7 +250,7 @@ const Contact = () => {
                     </div>
                   </a>
                   <a
-                    href="https://wa.me/918265025883"
+                    href="https://wa.me/918292355155"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-3 p-3 rounded-lg bg-card border border-border hover:border-primary transition-colors"
