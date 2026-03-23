@@ -105,7 +105,7 @@ const Footer = () => {
         {/* Bottom */}
         <div className="mt-12 pt-8 border-t border-background/10 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-background/50 text-sm">
-            © {currentYear} FivoPay. All rights reserved.
+            © {currentYear} SAIKHLEARN & SCHOLAR NEXUS PRIVATE LIMITED. All rights reserved.
           </p>
           <div className="flex flex-wrap gap-4 md:gap-6">
             <Link to="/privacy-policy" className="text-background/50 hover:text-background text-sm transition-colors">
