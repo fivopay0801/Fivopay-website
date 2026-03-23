@@ -23,12 +23,12 @@ const RefundPolicy = () => {
 
                             <h2 className="text-2xl font-bold text-foreground mt-8">1. Cancellation Policy</h2>
                             <p>
-                                Customers can cancel their service subscription at any time. However, cancellations made after the billing cycle has started will take effect from the next billing period. To cancel, please email support@fivopay.com.
+                                Customers can cancel their service subscription at any time. However, cancellations made after the billing cycle has started will take effect from the next billing period. To cancel, please email fivopay0801@gmail.com.
                             </p>
 
                             <h2 className="text-2xl font-bold text-foreground mt-8">2. Refund Eligibility</h2>
                             <p>
-                                Refunds are considered on a case-by-case basis. Generally, since FivoPay provides digital software-as-a-service (SaaS) products, refunds are only issued if:
+                                Refunds are considered on a case-by-case basis. Generally, since SAIKHLEARN & SCHOLAR NEXUS PRIVATE LIMITED provides digital software-as-a-service (SaaS) products, refunds are only issued if:
                             </p>
                             <ul className="list-disc pl-6 space-y-2">
                                 <li>A double payment was made accidentally.</li>

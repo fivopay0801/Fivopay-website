@@ -23,7 +23,7 @@ const ServiceFulfillment = () => {
 
                             <h2 className="text-2xl font-bold text-foreground mt-8">1. Service Delivery</h2>
                             <p>
-                                FivoPay Solutions Pvt Ltd provides digital financial technology services and software-as-a-service (SaaS) platforms. As such, there are no physical goods to be shipped.
+                                SAIKHLEARN & SCHOLAR NEXUS PRIVATE LIMITED provides digital financial technology services and software-as-a-service (SaaS) platforms. As such, there are no physical goods to be shipped.
                             </p>
 
                             <h2 className="text-2xl font-bold text-foreground mt-8">2. Delivery Timeline</h2>

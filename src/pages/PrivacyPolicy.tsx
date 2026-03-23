@@ -23,7 +23,7 @@ const PrivacyPolicy = () => {
 
                             <h2 className="text-2xl font-bold text-foreground mt-8">1. Introduction</h2>
                             <p>
-                                FivoPay Solutions Pvt Ltd ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website and use our services.
+                                SAIKHLEARN & SCHOLAR NEXUS PRIVATE LIMITED ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website and use our services.
                             </p>
 
                             <h2 className="text-2xl font-bold text-foreground mt-8">2. Information We Collect</h2>

@@ -203,7 +203,7 @@ const Contact = () => {
             {/* Contact Info */}
             <div>
               <div className="mb-8">
-                <h2 className="text-2xl font-bold mb-2">FivoPay Solutions Pvt Ltd</h2>
+                <h2 className="text-2xl font-bold mb-2">SAIKHLEARN & SCHOLAR NEXUS PRIVATE LIMITED</h2>
                 <p className="text-muted-foreground">
                   Reach out through any of these channels
                 </p>

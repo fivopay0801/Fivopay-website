@@ -23,12 +23,12 @@ const TermsConditions = () => {
 
                             <h2 className="text-2xl font-bold text-foreground mt-8">1. Acceptance of Terms</h2>
                             <p>
-                                By accessing and using the website of FivoPay Solutions Pvt Ltd ("FivoPay"), you agree to be bound by these Terms and Conditions and all applicable laws and regulations.
+                                By accessing and using the website of FivoPay, a product of SAIKHLEARN & SCHOLAR NEXUS PRIVATE LIMITED ("the Company"), you agree to be bound by these Terms and Conditions and all applicable laws and regulations.
                             </p>
 
                             <h2 className="text-2xl font-bold text-foreground mt-8">2. Use License</h2>
                             <p>
-                                Permission is granted to temporarily download one copy of the materials on FivoPay's website for personal, non-commercial transitory viewing only.
+                                Permission is granted to temporarily download one copy of the materials on the Company's website for personal, non-commercial transitory viewing only.
                             </p>
 
                             <h2 className="text-2xl font-bold text-foreground mt-8">3. User Obligations</h2>
@@ -38,17 +38,17 @@ const TermsConditions = () => {
 
                             <h2 className="text-2xl font-bold text-foreground mt-8">4. Service Terms</h2>
                             <p>
-                                FivoPay provides financial technology solutions. Specific service levels and uptime guarantees are governed by separate Service Level Agreements (SLA) signed during onboarding.
+                                the Company provides financial technology solutions. Specific service levels and uptime guarantees are governed by separate Service Level Agreements (SLA) signed during onboarding.
                             </p>
 
                             <h2 className="text-2xl font-bold text-foreground mt-8">5. Intellectual Property</h2>
                             <p>
-                                All content, logos, and software on this website are the property of FivoPay Solutions Pvt Ltd and are protected by applicable copyright and trademark law.
+                                All content, logos, and software on this website are the property of SAIKHLEARN & SCHOLAR NEXUS PRIVATE LIMITED and are protected by applicable copyright and trademark law.
                             </p>
 
                             <h2 className="text-2xl font-bold text-foreground mt-8">6. Limitations</h2>
                             <p>
-                                In no event shall FivoPay or its partners be liable for any damages arising out of the use or inability to use the materials on FivoPay's website.
+                                In no event shall the Company or its partners be liable for any damages arising out of the use or inability to use the materials on the Company's website.
                             </p>
 
                             <h2 className="text-2xl font-bold text-foreground mt-8">7. Governing Law</h2>

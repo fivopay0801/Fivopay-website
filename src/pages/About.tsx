@@ -28,7 +28,7 @@ const values = [
 ];
 
 const milestones = [
-  { year: "2025", title: "Company Founded", description: "FivoPay established by CEO Amin Shaikh with a vision to transform banking." },
+  { year: "2025", title: "Company Founded", description: "SAIKHLEARN & SCHOLAR NEXUS PRIVATE LIMITED established by CEO Amin Shaikh with a vision to transform banking." },
   { year: "2025", title: "First Product Launch", description: "Cooperative Management platform launched to serve financial cooperatives." },
   { year: "2025", title: "100+ Institutions", description: "Crossed milestone of 100 financial institutions trusting our platform." },
   { year: "2025", title: "Global Expansion", description: "Expanding services across multiple regions with localized solutions." },
@@ -66,6 +66,7 @@ const About = () => {
               className={`text-lg md:text-xl text-muted-foreground transition-all duration-700 delay-100 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
                 }`}
             >
+              FivoPay is a product of SAIKHLEARN & SCHOLAR NEXUS PRIVATE LIMITED.
               Making Banking Easier. We're on a mission to transform financial services
               with innovative technology solutions.
             </p>
