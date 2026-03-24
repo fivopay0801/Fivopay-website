@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Building2, Wallet, CreditCard } from "lucide-react";
+import { ArrowRight, Building2, Wallet, CreditCard, Users } from "lucide-react";
 import { useEffect, useState, useRef } from "react";
 
 const products = [
@@ -24,6 +24,13 @@ const products = [
     description: "Complete banking solution with payments, lending, multi-branch support, and real-time transaction processing.",
     features: ["Payment Gateway", "Multi-Branch", "Real-time Processing", "Lending Module"],
     gradient: "from-brand-cyan to-brand-blue",
+  },
+  {
+    icon: Users,
+    title: "Employee Credit Cooperatives",
+    description: "Specialized banking for manufacturing, defence, and government employees with flexible loan options.",
+    features: ["Sector-specific Loans", "Medical & Emergency", "Share Purchase", "Benefit Automation"],
+    gradient: "from-brand-blue to-brand-purple",
   },
 ];
 
@@ -54,17 +61,15 @@ const ProductsSection = () => {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2
-            className={`text-3xl md:text-4xl lg:text-5xl font-bold mb-4 transition-all duration-700 ${
-              isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-            }`}
+            className={`text-3xl md:text-4xl lg:text-5xl font-bold mb-4 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+              }`}
           >
             Everything You Need in{" "}
             <span className="gradient-text">One Platform</span>
           </h2>
           <p
-            className={`text-lg text-muted-foreground transition-all duration-700 delay-100 ${
-              isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-            }`}
+            className={`text-lg text-muted-foreground transition-all duration-700 delay-100 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+              }`}
           >
             Streamline your banking operations with our comprehensive suite of tools and services
           </p>
@@ -75,9 +80,8 @@ const ProductsSection = () => {
           {products.map((product, index) => (
             <div
               key={product.title}
-              className={`group relative bg-card rounded-2xl p-8 shadow-card border border-border hover-lift transition-all duration-700 ${
-                isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-              }`}
+              className={`group relative bg-card rounded-2xl p-8 shadow-card border border-border hover-lift transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+                } ${index === 3 ? "lg:col-start-2" : ""}`}
               style={{ transitionDelay: `${(index + 2) * 100}ms` }}
             >
               {/* Icon */}
@@ -119,9 +123,8 @@ const ProductsSection = () => {
 
         {/* CTA */}
         <div
-          className={`text-center mt-12 transition-all duration-700 delay-500 ${
-            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
-          }`}
+          className={`text-center mt-12 transition-all duration-700 delay-500 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+            }`}
         >
           <Link to="/products">
             <Button variant="gradient" size="lg">

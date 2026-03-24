@@ -72,6 +72,22 @@ const products = [
     ],
     gradient: "from-brand-cyan to-brand-blue",
   },
+  {
+    id: "employee-credit",
+    icon: Users,
+    title: "Employee Credit Cooperatives",
+    tagline: "Specialized financial societies for workplace banking",
+    description: "Comprehensive banking solutions tailored for employee credit societies across manufacturing, defence, and government sectors. Easy access to diversified loan products and member benefits.",
+    features: [
+      "Emergency & Medical Loans",
+      "Short & Long Term Lending",
+      "Share Purchase Facilities",
+      "Manufacturing Sector Solutions",
+      "Defence Personnel Benefits",
+      "Government Employee Schemes",
+    ],
+    gradient: "from-brand-blue to-brand-purple",
+  },
 ];
 
 const additionalFeatures = [
