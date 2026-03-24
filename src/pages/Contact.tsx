@@ -19,13 +19,13 @@ const contactInfo = [
   {
     icon: Mail,
     title: "Email Us",
-    value: "fivopay0801@gmail.com",
+    value: "info@fivopay.com",
     description: "We'll respond within 24 hours",
   },
   {
     icon: Phone,
     title: "Call Us",
-    value: "+91 8292355155",
+    value: "+91 9096081885",
     description: "Mon-Fri from 9am to 6pm IST",
   },
   {
@@ -125,7 +125,7 @@ const Contact = () => {
                       name="name"
                       value={formData.name}
                       onChange={handleChange}
-                      placeholder="John Doe"
+                      placeholder="Arjun Sharma"
                       required
                       className="h-12"
                     />
@@ -137,7 +137,7 @@ const Contact = () => {
                       type="email"
                       value={formData.email}
                       onChange={handleChange}
-                      placeholder="john@company.com"
+                      placeholder="arjun.sharma@enterprise.in"
                       required
                       className="h-12"
                     />
@@ -151,7 +151,7 @@ const Contact = () => {
                       name="company"
                       value={formData.company}
                       onChange={handleChange}
-                      placeholder="Your Company"
+                      placeholder="Global Fintech Solutions"
                       className="h-12"
                     />
                   </div>
@@ -162,7 +162,7 @@ const Contact = () => {
                       type="tel"
                       value={formData.phone}
                       onChange={handleChange}
-                      placeholder="+91 1234 567 890"
+                      placeholder="+91 98765 43210"
                       className="h-12"
                     />
                   </div>
@@ -174,7 +174,7 @@ const Contact = () => {
                     name="message"
                     value={formData.message}
                     onChange={handleChange}
-                    placeholder="Tell us about your requirements..."
+                    placeholder="I'm interested in learning more about your core banking solutions for our cooperative society..."
                     required
                     rows={5}
                     className="resize-none"
@@ -250,7 +250,7 @@ const Contact = () => {
                     </div>
                   </a>
                   <a
-                    href="https://wa.me/918292355155"
+                    href="https://wa.me/919096081885"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-3 p-3 rounded-lg bg-card border border-border hover:border-primary transition-colors"

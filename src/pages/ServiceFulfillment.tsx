@@ -43,7 +43,7 @@ const ServiceFulfillment = () => {
 
                             <h2 className="text-2xl font-bold text-foreground mt-8">5. Contact Information</h2>
                             <p>
-                                If you haven't received access to your service within the specified timeline, please reach out to us at fivopay0801@gmail.com.
+                                If you haven't received access to your service within the specified timeline, please reach out to us at info@fivopay.com.
                             </p>
                         </div>
                     </div>

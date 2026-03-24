@@ -14,7 +14,6 @@ import {
   Smartphone,
   BarChart3,
   Shield,
-  Zap,
 } from "lucide-react";
 import { useEffect, useState } from "react";
 
@@ -86,30 +85,6 @@ const additionalFeatures = [
   { icon: CreditCard, title: "Payment Rails", description: "UPI, IMPS, NEFT, RTGS integration" },
 ];
 
-const pricingPlans = [
-  {
-    name: "Starter",
-    price: "₹4,999",
-    period: "/month",
-    description: "Perfect for small cooperative societies",
-    features: ["Up to 100 members", "Basic loan processing", "Email support", "Standard reporting"],
-  },
-  {
-    name: "Professional",
-    price: "₹14,999",
-    period: "/month",
-    description: "Ideal for growing institutions",
-    features: ["Unlimited members", "Advanced analytics", "Priority support", "API access"],
-    featured: true,
-  },
-  {
-    name: "Enterprise",
-    price: "Custom",
-    period: "",
-    description: "For large scale banking operations",
-    features: ["Multi-branch support", "Dedicated account manager", "Custom integrations", "24/7 onsite support"],
-  },
-];
 
 const Products = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -222,62 +197,6 @@ const Products = () => {
         </div>
       </section>
 
-      {/* Pricing Section */}
-      <section className="py-20 bg-background text-center">
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Simple, <span className="gradient-text">Transparent</span> Pricing
-            </h2>
-            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              Choose the plan that's right for your business. No hidden fees.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            {pricingPlans.map((plan) => (
-              <div
-                key={plan.name}
-                className={`p-8 rounded-2xl border ${plan.featured
-                  ? "border-primary bg-primary/5 shadow-xl relative scale-105 z-10"
-                  : "border-border bg-card shadow-card"
-                  }`}
-              >
-                {plan.featured && (
-                  <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
-                    Most Popular
-                  </div>
-                )}
-                <h3 className="text-xl font-bold mb-2">{plan.name}</h3>
-                <div className="mb-4">
-                  <span className="text-4xl font-bold">{plan.price}</span>
-                  <span className="text-muted-foreground ml-1">{plan.period}</span>
-                </div>
-                <p className="text-sm text-muted-foreground mb-6">{plan.description}</p>
-                <div className="space-y-3 mb-8 text-left">
-                  {plan.features.map((feature) => (
-                    <div key={feature} className="flex items-center gap-2 text-sm">
-                      <Check className="h-4 w-4 text-primary shrink-0" />
-                      <span>{feature}</span>
-                    </div>
-                  ))}
-                </div>
-                <Link to="/contact">
-                  <Button
-                    variant={plan.featured ? "gradient" : "outline"}
-                    className="w-full"
-                  >
-                    Get Started
-                  </Button>
-                </Link>
-              </div>
-            ))}
-          </div>
-          <p className="mt-8 text-sm text-muted-foreground">
-            All prices are exclusive of GST. Enterprise plans are customized based on requirements.
-          </p>
-        </div>
-      </section>
 
       {/* CTA */}
       <section className="py-20 bg-background">

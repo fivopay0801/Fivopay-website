@@ -23,7 +23,7 @@ const RefundPolicy = () => {
 
                             <h2 className="text-2xl font-bold text-foreground mt-8">1. Cancellation Policy</h2>
                             <p>
-                                Customers can cancel their service subscription at any time. However, cancellations made after the billing cycle has started will take effect from the next billing period. To cancel, please email fivopay0801@gmail.com.
+                                Customers can cancel their service subscription at any time. However, cancellations made after the billing cycle has started will take effect from the next billing period. To cancel, please email info@fivopay.com.
                             </p>
 
                             <h2 className="text-2xl font-bold text-foreground mt-8">2. Refund Eligibility</h2>
@@ -47,7 +47,7 @@ const RefundPolicy = () => {
 
                             <h2 className="text-2xl font-bold text-foreground mt-8">5. Contact Support</h2>
                             <p>
-                                For any refund or cancellation queries, please contact our support team at fivopay0801@gmail.com or call +91 8292355155.
+                                For any refund or cancellation queries, please contact our support team at info@fivopay.com or call +91 9096081885.
                             </p>
                         </div>
                     </div>
