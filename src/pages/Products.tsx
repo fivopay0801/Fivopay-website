@@ -101,6 +101,51 @@ const additionalFeatures = [
   { icon: CreditCard, title: "Payment Rails", description: "UPI, IMPS, NEFT, RTGS integration" },
 ];
 
+const pricingPlans = [
+  {
+    name: "Starter",
+    description: "Perfect for small cooperative societies looking to digitize their operations.",
+    features: [
+      "Up to 100 members",
+      "Basic loan processing",
+      "Email support",
+      "Standard reporting",
+      "Digital Passbook",
+      "SMS Alerts",
+      "Basic KYC Verification",
+    ],
+  },
+  {
+    name: "Professional",
+    description: "Ideal for growing institutions requiring advanced automation and analytics.",
+    features: [
+      "Unlimited members",
+      "Advanced analytics",
+      "Priority support",
+      "API access",
+      "Mobile App for Members",
+      "Bulk Payment Processing",
+      "Automated Dividend Distribution",
+      "Audit Trail & Logs",
+    ],
+    featured: true,
+  },
+  {
+    name: "Enterprise",
+    description: "For large scale banking operations needing full customization and security.",
+    features: [
+      "Multi-branch support",
+      "Dedicated account manager",
+      "Custom integrations",
+      "24/7 priority support",
+      "White-label Solution",
+      "AI-powered Risk Assessment",
+      "On-premise Deployment",
+      "Compliance Automation",
+    ],
+  },
+];
+
 
 const Products = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -213,6 +258,60 @@ const Products = () => {
         </div>
       </section>
 
+
+      {/* Packages Section */}
+      <section className="py-20 bg-background text-center">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Our <span className="gradient-text">Packages</span>
+            </h2>
+            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+              Choose the plan that's right for your business. Contact us for detailed pricing.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-10 max-w-7xl mx-auto">
+            {pricingPlans.map((plan) => (
+              <div
+                key={plan.name}
+                className={`p-10 rounded-3xl border transition-all duration-300 ${plan.featured
+                  ? "border-primary bg-primary/5 shadow-2xl relative scale-110 z-10"
+                  : "border-border bg-card shadow-card hover:shadow-xl"
+                  }`}
+              >
+                {plan.featured && (
+                  <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-primary text-white text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-widest">
+                    Most Popular
+                  </div>
+                )}
+                <h3 className="text-2xl font-bold mb-4">{plan.name}</h3>
+                <p className="text-base text-muted-foreground mb-8 leading-relaxed">{plan.description}</p>
+                <div className="space-y-4 mb-10 text-left">
+                  {plan.features.map((feature) => (
+                    <div key={feature} className="flex items-center gap-3 text-base">
+                      <Check className="h-5 w-5 text-primary shrink-0" />
+                      <span>{feature}</span>
+                    </div>
+                  ))}
+                </div>
+                <Link to="/contact">
+                  <Button
+                    variant={plan.featured ? "gradient" : "outline"}
+                    size="lg"
+                    className="w-full text-lg h-14"
+                  >
+                    Get Started
+                  </Button>
+                </Link>
+              </div>
+            ))}
+          </div>
+          <p className="mt-8 text-sm text-muted-foreground">
+            Enterprise plans are customized based on specific requirements.
+          </p>
+        </div>
+      </section>
 
       {/* CTA */}
       <section className="py-20 bg-background">
